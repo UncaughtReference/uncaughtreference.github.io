@@ -1,3 +1,11 @@
 body {
-	background-image: "media/bg.gif";
+	background-image: url("media/bg.gif");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#window {
+	display: flex;
+  	justify-self: center;
+  	align-self: center;
 }
