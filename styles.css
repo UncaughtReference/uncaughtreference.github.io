@@ -226,7 +226,7 @@ br {
 #download-icon {
 	width: 1.3vw;
 	height: 1.3vw;
-	background: url("media/download1.png");
+	background: url("https://uncaughtreference.github.io/media/download1.png");
 	background-repeat: none;
 	background-size: cover;
 	display: inline-block;
