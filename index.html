@@ -5,6 +5,8 @@
 	<!-- UIkit CSS -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.25.13/dist/css/uikit.min.css" />
 
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=download" />
+
 	<!-- UIkit JS -->
 	<script src="https://cdn.jsdelivr.net/npm/uikit@3.25.13/dist/js/uikit.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/uikit@3.25.13/dist/js/uikit-icons.min.js"></script>
@@ -18,10 +20,12 @@
 	<div class="card-container">
 		<div class="card" id="beauty">
 			<h1 id="card-header"><i>beauty</i></h1>
+			<img src="media/construction.png" class="construction"/>
 		</div>
 		
 		<div class="card" id="in-progress">
 			<h1 id="card-header"><i>in-progress</i></h1>
+			<img src="media/construction.png" class="construction"/>
 		</div>
 
 		<div class="card" id="ram-to-orga">
@@ -30,7 +34,25 @@
 			    <input class="uk-input" type="text" placeholder="RAM Address..." id="ram-address" onchange="ramAddressChange(this.value)">
 			    <br>
 			    <span id="orga-display">Will appear here...</span>
+			    <div class="rom-block" id="rom-block-1">21F4C0-2577B8 / ASM copied to 8016F000-801A72F8</div>
+			    <div class="rom-block" id="rom-block-2">001000-0E6258 / ASM copied to 80246000-8032B258</div>
+			    <div class="rom-block" id="rom-block-3">0F5580-102D08 / ASM copied to 80378800-80385F88</div>
 			</form>
+		</div>
+
+		<div class="card" id="ascii-to-asm">
+			<h1 id="card-header"><i>ASCII to ASM</i></h1>
+			<form>
+			    <input class="uk-input" type="text" placeholder="Text..." id="ascii-text" onchange="ramAddressChange(this.value)">
+			    <br>
+			    <span id="ascii-display">Will appear here...</span>
+			</form>
+			<img src="media/construction.png" class="construction"/>
+		</div>
+
+		<div class="card" id="patches">
+			<h1 id="card-header"><i>Patches</i></h1>
+			<a href="files/shut_up_bobombs.asm" class="download-button" download><div id="download-icon"></div> Shut Up Bob-Ombs</a>
 		</div>
 	</div>
 	<div class="div-sidebar">
@@ -48,8 +70,12 @@
 				<a href="#ram-to-orga" uk-scroll><i>RAM to .orga</i></a>
 			</li>
 			<li class="sidebar-link">
-				<a href="#in-progress" uk-scroll><i>in-progress</i></a>
+				<a href="#ascii-to-asm" uk-scroll><i>ASCII to ASM</i></a>
 			</li>
+			<li class="sidebar-link">
+				<a href="#patches" uk-scroll><i>Patches</i></a>
+			</li>
+
 		</ul>
 	</div>
 	

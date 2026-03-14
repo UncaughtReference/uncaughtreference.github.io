@@ -37,21 +37,27 @@ body {
         rgba(0, 0, 0, 0.1) 100%
     );
     opacity: 0.5;
-    position: absolute;
-    bottom: 100%;
-    animation: scanline 10s linear infinite;
+    position: fixed;
+    bottom: 500%;
+    animation: scanline 15s linear infinite;
     pointer-events: none;	
 }
 
 @keyframes scanline {
 	0% {
-    bottom: 100%;
+    bottom: 500%;
+    opacity: 0.5;
 	}
-	80% {
-	    bottom: 100%;
+	50% {
+	    bottom: 500%;
+	    opacity: 0.5;
+	}
+	90% {
+	    opacity: 0.5;
 	}
 	100% {
 	    bottom: 0%;
+	    opacity: 0;
 	}
 }
 
@@ -100,17 +106,20 @@ body {
 	height: inherit;
 	background-color: #F5F5F5;
 	box-shadow: 0px 0px 18px #d9a3ff;
-	border-radius: 0.5rem;
+	border-radius: 6px;
 	--x-px: calc(var(--x) * 1px);
 	--y-px: calc(var(--y) * 1px);
 	--border: 2px;
 	border-style: solid;
 	border-color: #d9a3ff;
-	border-width: thick;
+	border-width: 0.3vw;
 	margin-top: 5%;
 	color: #333333;
 	padding-left: 5%;
 	padding-top: 2%;
+	padding-bottom: 0%;
+
+	font-size:1vw;
 
 	line-height: 3vw;
 }
@@ -152,5 +161,83 @@ br {
 }
 
 #ram-address {
-	width: 30%;
+	size: 2vw;
+	height: 2vw;
+	width: 8vw;
+}
+
+.rom-block {
+	display: block;
+	width: 87%;
+	height: inherit;
+	background-color: #F5F5F5;
+	box-shadow: 0px 0px 18px #d9a3ff;
+	border-radius: 0.5rem;
+	--x-px: calc(var(--x) * 1px);
+	--y-px: calc(var(--y) * 1px);
+	--border: 2px;
+	border-style: solid;
+	border-color: #d9a3ff;
+	border-width: 0.3vw;
+	margin-top: 5%;
+	color: #333333;
+	padding-left: 5%;
+	margin-bottom: 0%;
+
+	line-height: 3vw;
+}
+
+.construction {
+	width: 10vw;
+}
+
+#ascii-text {
+	size: 2vw;
+	height: 2vw;
+	width: 28vw;
+}
+
+a.download-button {
+    display: block;
+	width: 87%;
+	height: auto;
+	background-color: #F5F5F5;
+	box-shadow: 0px 0px 18px #d9a3ff;
+	border-radius: 0.5rem;
+	--x-px: calc(var(--x) * 1px);
+	--y-px: calc(var(--y) * 1px);
+	--border: 2px;
+	border-style: solid;
+	border-color: #d9a3ff;
+	border-width: 0.3vw;
+	margin-top: 5%;
+	color: #333333;
+	padding-left: 5%;
+	margin-bottom: 0%;
+
+	line-height: 3vw;
+}
+
+a.download-button:hover {
+	color: #333;
+  	text-decoration: none;
+}
+
+#download-icon {
+	width: 1.3vw;
+	height: 1.3vw;
+	background: url("media/download1.png");
+	background-repeat: none;
+	background-size: cover;
+	display: inline-block;
+	line-height: 5vw;
+	top: 0.2vw;
+	position: relative;
+	margin-right: 0.2vw;
+}
+
+#download-icon:hover {
+	background: url("media/download2.png");
+	background-repeat: none;
+	background-size: cover;
 }
