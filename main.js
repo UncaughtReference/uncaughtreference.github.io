@@ -50,3 +50,15 @@ function ramAddressChange(value) {
         document.getElementById("rom-block-3").style.borderColor = "#00b83a";
     }
 }
+
+function showParagraph(id, vw, obj) {
+    p = document.getElementById("p"+id);
+    p.style.opacity = 1;
+    obj.style.height = vw;
+}
+
+function hideParagraph(id, obj) {
+    p = document.getElementById("p"+id);
+    p.style.opacity = 0;
+    obj.style.height = "2vw";
+}

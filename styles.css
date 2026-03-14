@@ -76,6 +76,8 @@ body {
 	background: white;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+
+	transition: background 0.2s ease-in-out;
 }
 
 .sidebar-link:hover {
@@ -122,23 +124,12 @@ body {
 	font-size:1vw;
 
 	line-height: 3vw;
+
+	transition: box-shadow 0.2s ease-in-out;
 }
 
 .card:hover {
-	animation: card 0.2s ease-in-out forwards;
-	animation-direction: alternate;
-}
-
-@keyframes card {
-	0% {
-		box-shadow: 0px 0px 18px #d9a3ff;
-	}
-	100% {
-		box-shadow: 0px 0px 50px #d9a3ff;
-	}
-	0% {
-		box-shadow: 0px 0px 18px #d9a3ff;
-	}
+	box-shadow: 0px 0px 50px #d9a3ff;
 }
 
 h1 {
@@ -199,7 +190,7 @@ br {
 
 .download-button {
     display: block;
-	width: 87%;
+	width: 83%;
 	height: auto;
 	background-color: #F5F5F5;
 	box-shadow: 0px 0px 18px #d9a3ff;
@@ -213,9 +204,17 @@ br {
 	margin-top: 5%;
 	color: #333333;
 	padding-left: 5%;
+	padding-right: 5%;
 	margin-bottom: 0%;
 
-	line-height: 3vw;
+	padding-top: 0.8vw;
+	padding-bottom: 0.8vw;
+
+	line-height: 2vw;
+
+	height: 2vw;
+
+	transition: height 0.2s ease-in-out;
 }
 
 .download-button:hover {
@@ -240,4 +239,10 @@ br {
 	background: url("media/download2.png");
 	background-repeat: none;
 	background-size: cover;
+}
+
+.patches-p {
+	line-height: 1.5vw;
+	opacity: 0;
+	transition: opacity 0.2s ease-in-out;
 }

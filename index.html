@@ -42,28 +42,18 @@
 			</form>
 		</div>
 
-		<div class="card" id="ascii-to-asm">
-			<h1 id="card-header"><i>ASCII to ASM</i></h1>
-			<form>
-			    <input class="uk-input" type="text" placeholder="Text..." id="ascii-text" onchange="ramAddressChange(this.value)">
-			    <br>
-			    <span id="ascii-display">Will appear here...</span>
-			</form>
-			<img src="media/construction.png" class="construction"/>
-		</div>
-
 		<div class="card" id="patches">
 			<h1 id="card-header"><i>Patches</i></h1>
-			<span class="download-button"><a id="download-icon" href="https://uncaughtreference.github.io/files/shut_up_bobombs.asm" download="shut_up_bobombs.asm"></a> Shut Up Bob-Ombs</span>
+			<span class="download-button" onmouseover="showParagraph(1, '7vw', this)" onmouseleave="hideParagraph(1, this)"><a id="download-icon" href="https://uncaughtreference.github.io/files/shut_up_bobombs.asm" download="shut_up_bobombs.asm"></a> Shut Up Bob-Ombs <p class="patches-p" id="p1">Mutes the annoying sound Pink Bob-Ombs play while idle.</p></span>
 
-			<span class="download-button"><a id="download-icon" href="https://uncaughtreference.github.io/files/save_skip.asm" download="save_skip.asm"></a> Save Menu Skip</span>
+			<span class="download-button" onmouseover="showParagraph(2, '5.5vw', this)" onmouseleave="hideParagraph(2, this)"><a id="download-icon" href="https://uncaughtreference.github.io/files/save_skip.asm" download="save_skip.asm"></a> Save Menu Skip<p class="patches-p" id="p2">Skips the "SAVE & CONTINUE", etc. menu.</p></span>
 
-			<span class="download-button"><a id="download-icon" href="https://uncaughtreference.github.io/files/faster_shrinkplatforms.asm" download="faster_shrinkplatforms.asm"></a> Faster MOP Shrinkplatforms</span>
+			<span class="download-button" onmouseover="showParagraph(3, '5.5vw', this)" onmouseleave="hideParagraph(3, this)"><a id="download-icon" href="https://uncaughtreference.github.io/files/faster_shrinkplatforms.asm" download="faster_shrinkplatforms.asm"></a> Faster MOP Shrinkplatforms<p class="patches-p" id="p3">Kinda self-explainatory.</p></span>
 		</div>
 
 		<div class="card" id="custom-objects">
 			<h1 id="card-header"><i>Custom Objects</i></h1>
-			<img src="media/construction.png" class="construction"/>
+			<span class="download-button" onmouseover="showParagraph(4, '10vw', this)" onmouseleave="hideParagraph(4, this)"><a id="download-icon" href="https://uncaughtreference.github.io/files/pink_crystal.zip" download="pink_crystal.zip"></a> Pink Crystal<p class="patches-p" id="p4">From "beauty"; refreshes Mario's cap timer on touch. The .zip includes: <i>Pink Crystal.rmobj</i> (Custom Objects->Import from File), <i>optional_cap_music_fix.asm</i> (fixes cap music fading out), and a revert patch for the latter.</p></span>
 		</div>
 	</div>
 	<div class="div-sidebar">
@@ -79,9 +69,6 @@
 			<li class="uk-nav-header" id="sidebar-header"><strong>SM64 Tools</strong></li> 
 			<li class="sidebar-link">
 				<a href="#ram-to-orga" uk-scroll><i>RAM to .orga</i></a>
-			</li>
-			<li class="sidebar-link">
-				<a href="#ascii-to-asm" uk-scroll><i>ASCII to ASM</i></a>
 			</li>
 			<li class="sidebar-link">
 				<a href="#patches" uk-scroll><i>Patches</i></a>
