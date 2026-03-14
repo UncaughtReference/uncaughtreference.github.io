@@ -1,0 +1,40 @@
+.orga 0x98B94
+nop
+nop
+nop
+lui at, 0x8033
+sb r0, 0x1470(at)
+addiu t5, r0, 0xFFFF
+lui at, 0x8033
+sh t5, 0x14f8(at)
+lui t6, 0x8033
+lb t6, 0x1490(t6)
+lui at, 0x8033
+sw r0, 0x16cc(at)
+lui at, 0x8033
+sb r0, 0x16c8(at)
+lui at, 0x8033
+sb r0, 0x16d4(at)
+j 0x802ddc90
+li v0, 1
+
+.orga 0x98B4C
+nop
+nop
+nop
+
+.orga 0x123AC
+nop
+nop
+nop
+
+.orga 0x98B84
+nop
+nop
+nop
+nop
+nop
+nop
+
+.orga 0x98B74
+nop

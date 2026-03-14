@@ -1,0 +1,5 @@
+.orga 0x658B4
+lui at, 0x4180
+
+.orga 0x658A0
+slti at, t0, 0x0010
