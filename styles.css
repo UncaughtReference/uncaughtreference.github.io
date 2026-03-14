@@ -246,3 +246,7 @@ br {
 	opacity: 0;
 	transition: opacity 0.2s ease-in-out;
 }
+
+#down-arrow {
+	width: 1vw;
+}
