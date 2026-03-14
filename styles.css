@@ -23,6 +23,7 @@ body {
 	opacity: 1;
 	background-repeat: repeat-y;
 	background-size: contain;
+	position: fixed;
 }
 
 .scanline {
@@ -65,11 +66,13 @@ body {
 	font-size: 1.3vw;
 }
 
-#sidebar-link {
-	color: white;
+.sidebar-link {
+	background: white;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
-#sidebar-link:hover {
+.sidebar-link:hover {
 	background: -webkit-linear-gradient(#d9a3ff, #9403fc);
   	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;
@@ -87,7 +90,8 @@ body {
 
  	z-index: 2;
 
- 	margin-bottom: 5%;
+ 	line-height: 0.5vw;
+ 	margin-bottom: 0;
 }
 
 .card {
@@ -107,6 +111,8 @@ body {
 	color: #333333;
 	padding-left: 5%;
 	padding-top: 2%;
+
+	line-height: 3vw;
 }
 
 .card:hover {
@@ -135,4 +141,16 @@ h1 {
 #card-header {
 	font-size: 2vw;
 	line-height: 3vw;
+}
+
+br {
+  content: "";
+  margin: 2em;
+  display: block;
+  font-size: 24%;
+  line-height: 0.5vw;
+}
+
+#ram-address {
+	width: 30%;
 }

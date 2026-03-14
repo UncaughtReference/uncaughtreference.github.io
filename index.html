@@ -16,21 +16,39 @@
 	<div class="scanline">
 	</div>
 	<div class="card-container">
-		<div class="card">
+		<div class="card" id="beauty">
 			<h1 id="card-header"><i>beauty</i></h1>
 		</div>
-		<div class="card">
+		
+		<div class="card" id="in-progress">
 			<h1 id="card-header"><i>in-progress</i></h1>
+		</div>
+
+		<div class="card" id="ram-to-orga">
+			<h1 id="card-header"><i>RAM to .orga Converter</i></h1>
+			<form>
+			    <input class="uk-input" type="text" placeholder="RAM Address..." id="ram-address" onchange="ramAddressChange(this.value)">
+			    <br>
+			    <span id="orga-display">Will appear here...</span>
+			</form>
 		</div>
 	</div>
 	<div class="div-sidebar">
 		<ul class="uk-nav uk-nav-default tm-nav" id="sidebar">
 			<li class="uk-nav-header" id="sidebar-header"><strong>SM64 Hacks</strong></li> 
-			<li>
-				<a href="../docs/introduction" id="sidebar-link"><i>beauty</i></a>
+			<li class="sidebar-link">
+				<a href="#beauty" uk-scroll><i>beauty</i></a>
 			</li>
-			<li>
-				<a href="../docs/migration" id="sidebar-link"><i>in-progress</i></a>
+			<li class="sidebar-link">
+				<a href="#in-progress" uk-scroll><i>in-progress</i></a>
+			</li>
+
+			<li class="uk-nav-header" id="sidebar-header"><strong>SM64 Tools</strong></li> 
+			<li class="sidebar-link">
+				<a href="#ram-to-orga" uk-scroll><i>RAM to .orga</i></a>
+			</li>
+			<li class="sidebar-link">
+				<a href="#in-progress" uk-scroll><i>in-progress</i></a>
 			</li>
 		</ul>
 	</div>
