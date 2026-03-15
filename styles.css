@@ -1,5 +1,22 @@
-body {
-	
+html {
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  box-shadow: 0px 0px 18px #d9a3ff;
+
+  background: transparent;
+  width: 1em;
+}
+ 
+body::-webkit-scrollbar-track {
+  box-shadow: 0px 0px 18px #d9a3ff;
+  border-radius: 2px;
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: #d9a3ff;
+  
 }
 
 .div-bg-image {
